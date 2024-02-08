@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iEmployee</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .iemployee-header {
+            border-bottom: 0.5px solid #d7d7d7;
+            padding: 10px;
+        }
+
+        .iemployee-header span {
+            margin-right: 2;
+            letter-spacing: 2px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 28px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .iemployee-welcome {
+            padding: 20px;
+        }
+
+        .iemployee-welcome marquee {
+            font-size: 24px;
+        }
+
+        .iemployee-options {
+            height: 50vh;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 30px;
+        }
+
+        .iemployee-card {
+            width: 250px;
+            height: 250px;
+            background: #1e3264;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            border-radius: 5px;
+            color: #fff;
+            position: relative;
+            padding: 10px;
+        }
+
+        .iemployee-card span {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .iemployee-card a {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            display: block;
+            width: 100px;
+            height: 30px;
+            border-radius: 4px;
+            padding: 5px 10px;
+            text-decoration: none;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #1e3264;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="iemployee-header">
+        <span>iEmployee</span>
+    </div>
+    <div class="iemployee-content">
+        <div class="iemployee-welcome">
+            <marquee>Welcome to iEmployee</marquee>
+        </div>
+        <div class="iemployee-options">
+            <div class="iemployee-card">
+                <span>Check all the APIs</span>
+                <a href="http://localhost:8081/api-docs">Click Here</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
